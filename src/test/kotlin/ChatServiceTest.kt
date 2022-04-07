@@ -212,26 +212,10 @@ class ChatServiceTest {
 
         // assert
         assertEquals(
-            "Chat id: 1; with Max; last: Message id: 1; from: Ivan; to: Max; text: Test to Max",
+            "Chat id: 1; with Max; last message: <Message id: 1; from: Ivan; to: Max; text: Test to Max>",
             chatPresentation
         )
 
     }
 
 }
-
-//    @Test(expected = NoteNotFoundException::class)
-//    fun delete_ExistingId() {
-//
-//        // arrange
-//        val noteService = NoteService()
-//        val note = noteService.add(Note(text = "First note"))
-//        val noteId = note.id
-//
-//        // act
-//        noteService.createComment(noteId = noteId, comment = NoteComment(text = "First comment"))
-//        noteService.delete(noteId = noteId)
-//
-//        val noteEdited = noteService.getById(noteId = noteId)
-//
-//    }
